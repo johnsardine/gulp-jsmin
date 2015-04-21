@@ -1,6 +1,6 @@
 {
   "name": "gulp-jsmin",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "minify js using gulp",
   "main": "index.js",
   "scripts": {
