@@ -41,7 +41,7 @@ module.exports = function () {
 					var minimized = jsmin({'code': data, 'src': file.relative, 'dist':file.relative + '.min.js'});
 					gutil.log('gulp-jsmin:', gutil.colors.green('✔ ') + file.relative); 
 					file.contents = new Buffer(minimized.code);
-					
+					file.sourceMap = JSON.parse(minimized.sourcemap);
 					cb(null, file);
 
 				
